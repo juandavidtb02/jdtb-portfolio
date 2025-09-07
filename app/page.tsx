@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { getAssetPath } from "@/lib/utils";
 import {
   Github,
   Linkedin,
@@ -104,7 +105,7 @@ export default function Portfolio() {
         language === "es"
           ? "Plataforma web que conecta agricultores con consumidores, permitiendo la publicación de anuncios y venta de productos agrícolas. Sistema completo con gestión de usuarios, productos y transacciones."
           : "Web platform that connects farmers with consumers, allowing the publication of ads and sale of agricultural products. Complete system with user, product and transaction management.",
-      image: "/mercaorinoquia.png",
+      image: getAssetPath("/mercaorinoquia.png"),
       technologies: ["Django", "React", "PostgreSQL", "TailwindCSS"],
       githubUrl: "https://github.com/DanielAlferez/Mercaorinoquia-Backend",
       demoUrl: "https://mercaorinoquia.netlify.app/",
@@ -116,7 +117,7 @@ export default function Portfolio() {
         language === "es"
           ? "Tienda en línea especializada en productos dentales con diseño responsive. Incluye carrito de compras, gestión de inventario y sistema de pagos integrado."
           : "Online store specialized in dental products with responsive design. Includes shopping cart, inventory management and integrated payment system.",
-      image: "/dentistore.png",
+      image: getAssetPath("/dentistore.png"),
       technologies: ["Django", "React", "MySQL", "Bootstrap"],
       githubUrl: "https://github.com/juandavidtb02/Backend-dentistore",
       demoUrl: "https://dentistore.netlify.app/",
@@ -279,7 +280,7 @@ export default function Portfolio() {
         ref={setSectionRef("hero")}
         className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-background via-background to-secondary/20"
       >
-        <div className="absolute inset-0 bg-[url('/lossantos.png')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/jdtb-portfolio/lossantos.png')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div
             className={`transition-all duration-1000 ${
@@ -355,7 +356,7 @@ export default function Portfolio() {
                   <div className="mb-6 flex justify-center">
                     <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-primary/30 hover:border-primary/60 transition-all duration-300">
                       <img
-                        src="/profilepic.jpeg"
+                        src={getAssetPath("/profilepic.jpeg")}
                         alt="Tu foto personal"
                         className="w-full h-full object-cover"
                       />
