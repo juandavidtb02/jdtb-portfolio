@@ -129,6 +129,7 @@ export default function Portfolio() {
         language === "es"
           ? "Aplicación web monolítica desarrollada en PHP con PostgreSQL para la gestión de información del Tour de Francia. Incluye páginas dinámicas construidas con HTML, CSS y JavaScript vanilla, ofreciendo una experiencia sencilla e interactiva."
           : "Monolithic web application developed in PHP with PostgreSQL for Tour de France information management. Includes dynamic pages built with HTML, CSS and vanilla JavaScript, offering a simple and interactive experience.",
+      image: getAssetPath("/tourfrancia.jpg"),
       technologies: ["PHP", "PostgreSQL", "HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/juandavidtb02/tour-francia-php",
       demoUrl: "#",
