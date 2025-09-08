@@ -356,7 +356,7 @@ export default function Portfolio() {
                   <div className="mb-6 flex justify-center">
                     <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-primary/30 hover:border-primary/60 transition-all duration-300">
                       <img
-                        src={getAssetPath("/profilepic.jpeg")}
+                        src={getAssetPath("/profilepic.jpg")}
                         alt="Tu foto personal"
                         className="w-full h-full object-cover"
                       />
