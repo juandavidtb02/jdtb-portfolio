@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getAssetPath } from "@/lib/utils";
+import { VersionWarningModal } from "@/components/VersionWarningModal";
 import {
   Github,
   Linkedin,
@@ -266,6 +267,8 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <VersionWarningModal />
+      
       <Button
         onClick={toggleLanguage}
         className="fixed top-4 right-4 z-50 animate-glow w-16 h-10 cursor-pointer"
